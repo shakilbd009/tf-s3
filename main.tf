@@ -14,7 +14,7 @@ provider "aws" {
 module "s3_module" {
   source = "./module/s3"
   bucket_name = local.bucket_name
-  set_lifecycle = true
   lifecycle_id = local.lifecycle_id
-  #enable_policy = false
+  #enable_lifecycle = false # by default its set to true, uncomment it to change it
+  #enable_policy = false # by default its set to true, uncomment it to change it
 }

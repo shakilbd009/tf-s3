@@ -9,10 +9,10 @@ variable env {
   description = "environment name"
 }
 
-variable set_lifecycle {
+variable enable_lifecycle {
   type        = bool
   default     = true
-  description = "set lifecycle"
+  description = "enable lifecycle or disable"
 }
 
 variable lifecycle_id {
